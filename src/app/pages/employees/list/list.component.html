@@ -1,1 +1,38 @@
-<p>list works!</p>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr class="table-secondary">
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor=" let item of [0, 1, 2, 3, 4]">
+                <td scope="row">Juan Alberto Badia</td>
+                <td>jabadia@gmail.com</td>
+                <td>04/01/2010</td>
+                <td class="d-flex gap-2" role="group"><!-- btn-group. Para no mostrar en mobile: none d-sm-block -->
+                    <button type="button" class="btn btn-outline-success btn-sm" (click)="onGoToSee(item)">Ver</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" (click)="onGoToEdit(item)">Editar</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" (click)="onGoToDelete(item)">Eliminar</button>
+                </td>
+            </tr>
+            <!--
+            <tr class="table-primary">
+                <th scope="row">Primary</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            <tr class="table-secondary">
+                <th scope="row">Secondary</th>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+        -->
+        </tbody>
+    </table>
+</div>
