@@ -15,6 +15,7 @@ import { DetailsComponent } from './pages/employees/details/details.component';
 import { EditModule } from './pages/employees/edit/edit.module';
 import { EditComponent } from './pages/employees/edit/edit.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AppRoutingModule } from './app-routing.module';
     NewModule,
     DetailsModule,
     EditModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   
   ],
   providers: [],

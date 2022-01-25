@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [],
@@ -13,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
   exports: [
     MatSliderModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
   ]
 })
 export class MaterialModule { }

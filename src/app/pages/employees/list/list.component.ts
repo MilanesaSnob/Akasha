@@ -31,7 +31,7 @@ export class ListComponent implements OnInit {
     this.router.navigate(['edit'], this.navigationExtras);
   }
 
-  onGoToDelete(item: any):void{
+  onDelete(item: any):void{
     alert('Deleted');
   }
 

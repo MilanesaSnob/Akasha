@@ -15,9 +15,9 @@
             </li>
 
             <div class="d-flex gap-3 mt-3" role="group"><!-- btn-group. Para no mostrar en mobile: none d-sm-block -->
-                <button type="button" class="btn btn-outline-light">Back</button>
-                <button type="button" class="btn btn-outline-info">Editar</button>
-                <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                <button type="button" class="btn btn-outline-light" (click)="onGoBackToList()">Back</button>
+                <button type="button" class="btn btn-outline-info" (click)="onGoToEdit()">Editar</button>
+                <button type="button" class="btn btn-outline-danger" (click)="onDelete()">Eliminar</button>
             </div>
         </ul>
     </div>

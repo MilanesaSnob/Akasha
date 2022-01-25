@@ -1,1 +1,20 @@
-<p>edit works!</p>
+<form [formGroup]="employeeForm" (ngSubmit)="onSave()">
+    <div class="row form-group">
+        <div class="mb-3 mt-2 col-md-4">
+            <label for="name" class="form-label">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Enter Name" formControlName="name">
+        </div>
+        <div class="mb-3 mt-2 col-md-4">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" formControlName="email">
+        </div>
+        <div class="mb-3 mt-2 col-md-4">
+            <label for="startDate" class="form-label">Start Date:</label>
+            <input type="startDate" class="form-control" id="startDate" placeholder="Enter start date" formControlName="startDate">
+        </div>
+        <div class="col d-flex gap-3" role="group">
+            <button type="button" class="btn btn-outline-light" (click)="onGoBackToList()">Back</button>
+            <button type="submit" class="btn btn-outline-primary">Save</button>
+        </div>
+    </div>
+</form>
