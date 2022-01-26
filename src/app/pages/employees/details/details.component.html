@@ -5,19 +5,19 @@
     <div class="card-body">
         <ul class="list-group list-group-flush">
             <li class="list-group-item"> 
-                Name: <h4>Juan Alberto Badia</h4>
+                Name: <h4>{{employee.name}}</h4>
             </li>
             <li class="list-group-item">
-                Email: <h4>jabadia@gmail.com</h4>
+                Email: <h4>{{employee.email}}</h4>
             </li>
             <li class="list-group-item">
-                Start date: <h4>01/02/2010</h4>
+                Start date: <h4>{{employee.startDate}}</h4>
             </li>
 
             <div class="d-flex gap-3 mt-3" role="group"><!-- btn-group. Para no mostrar en mobile: none d-sm-block -->
                 <button type="button" class="btn btn-outline-light" (click)="onGoBackToList()">Back</button>
-                <button type="button" class="btn btn-outline-info" (click)="onGoToEdit()">Editar</button>
-                <button type="button" class="btn btn-outline-danger" (click)="onDelete()">Eliminar</button>
+                <button type="button" class="btn btn-outline-info" (click)="onGoToEdit()">Edit</button>
+                <button type="button" class="btn btn-outline-danger" (click)="onDelete()">Delete</button>
             </div>
         </ul>
     </div>

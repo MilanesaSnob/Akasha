@@ -17,10 +17,14 @@ export class DetailsComponent implements OnInit {
   employee: any = null;
   constructor(private router: Router) {
     const navigation = this.router.getCurrentNavigation();
-    this.employee = navigation?.extras?.state;
+    this.employee = navigation?.extras?.state?.['value'];
    }
 
   ngOnInit(): void {
+    /* Lo mando al List si intenta entrar por ruta del nav */
+    if ( typeof this.employee === 'undefined'){
+      this.router.navigate(['list']);
+    }
   }
 
   onGoBackToList():void{

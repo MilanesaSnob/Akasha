@@ -9,14 +9,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor=" let item of [0, 1, 2, 3, 4]">
-                <td scope="row">Juan Alberto Badia</td>
-                <td>jabadia@gmail.com</td>
-                <td>04/01/2010</td>
+            <tr *ngFor=" let item of fakeData">
+                <td scope="row">{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.startDate}}</td>
                 <td class="d-flex gap-2" role="group"><!-- btn-group. Para no mostrar en mobile: none d-sm-block -->
-                    <button type="button" class="btn btn-outline-success btn-sm" (click)="onGoToSee(item)">Ver</button>
-                    <button type="button" class="btn btn-outline-info btn-sm" (click)="onGoToEdit(item)">Editar</button>
-                    <button type="button" class="btn btn-outline-danger btn-sm" (click)="onDelete(item)">Eliminar</button>
+                    <button type="button" class="btn btn-outline-success btn-sm" (click)="onGoToSee(item)">View</button>
+                    <button type="button" class="btn btn-outline-info btn-sm" (click)="onGoToEdit(item)">Edit</button>
+                    <button type="button" class="btn btn-outline-danger btn-sm" (click)="onDelete(item)">Delete</button>
                 </td>
             </tr>
         </tbody>
